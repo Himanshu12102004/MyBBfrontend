@@ -1,0 +1,89 @@
+@font-face {
+    font-family: lato;
+    src: url('fonts/lato/lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: montserrat-medium;
+    src: url('fonts/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: lato-bold;
+    src: url('fonts/Lato-ExtraBold.ttf');
+}
+
+ul li {
+    font-size: 1.4rem;
+    display: inline-block;
+    font-family: lato;
+
+}
+
+* {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D9F0EEC9;
+    /* height: 10vh; */
+}
+.active{
+    /* background-color: #009892; */
+    /* text-decoration: underline; */
+}
+.logo {
+
+    padding-top: 0.7rem;
+    padding-left: 7rem;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ 
+
+.login {
+
+    background-color: rgba(110, 250, 204, 0.67);
+    padding: 0.3rem 0.8rem;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+.menu-bar{
+    display: none;
+}
+.community{
+    height: 10vh;
+    background-color:  #1D7BFF;
+    box-shadow: 0px 0px 10px 0px #000000;
+font-family: lato;
+font-weight: 700;
+color: white;
+font-size: 1.8rem;
+display: flex;
+align-items: center;
+padding-left: 6rem;
+}

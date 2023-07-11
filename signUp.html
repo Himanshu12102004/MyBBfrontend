@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Brains</title>
+    <link rel="stylesheet" href="signUp.css">
+</head>
+
+<body>
+    <nav class="navtab">
+        <div>
+          <img class="logo" src="images/logo 3 transparent 2.png" alt="better brains" />
+        </div>
+        <ul>
+    
+          <li><a href="index.html"> home</a></li>
+          <li><a href="inspiring Stories.html">inspiring stories</a></li>
+          <li id="importantTips">important tips</li>
+          <a href="contactUs.html">
+            <li id="contactUs">contact us</li>
+          </a>
+          <li>Community</li>
+          <li class="login" >  login/sign-up </li>
+    
+        </ul>
+      </nav>
+    <div class="loginStrip">sign up</div>
+    <div class="loginForm">
+        <div>
+            <img class="loginImg" src="images/loginPhoto.png" alt="login" height="auto">
+        </div>
+        <div class="inputFields">
+            <div id="loginText">
+                <h1>sign up</h1>
+            </div>
+            <form action="">
+                <label>name</label> <br>
+                <input type="text" placeholder="enter your name" id="name">
+                <br>
+                <!-- <div id="id"> -->
+                <label>mobile no.</label>
+                 <br>
+                <input type="number" placeholder="enter your mobile no" id="mobileNo">
+                <br>
+                <label for="email">email-Id</label>
+                <br>
+                <input type="text" placeholder="enter email-Id" id="userId">
+                <!-- </div> -->
+                <br>
+                <label id="passwordText"> password</label>
+            <br>
+                <div>
+                    <input type="password" placeholder="enter password" id="password">
+
+                    <img id="eye" src="SVG/eye.svg" alt="show password">
+                </div>
+               
+                <!-- <p id="forgotPassword">forgot password?</p> -->
+                <br>
+                <button class="loginButton" id="submit"> sign up</button>
+
+                <hr id="horizontalLine">
+
+            </form>
+            <img src="images/cont with google.png" alt="continue with google" id="contWithGoogle">
+
+            <div class="SignUpDirect">
+                <div>already have an account?</div>
+             <a href="login.html">   <button class="signUpButton" type="submit"> login </button></a>
+            </div>
+        </div>
+    </div>
+    <div class="blankStrip"></div>
+
+
+    <footer class="footer">
+
+        <div></div>
+        <p class="apniHakeekat">
+            Better Brains is one of the leading platforms of
+            <br>
+            INDIA to Perform, Analyze& improve your JEE
+            <br>
+            preparation so that you can achieve your dream of
+            <br>
+            IITs & NITs.
+            <br><br>
+        </p>
+
+        <ul class="infoBetterBrains">
+
+            <li>BETTER BRAINS</li>
+            <br>
+            <!-- <li> </li> -->
+            <li>About us</li>
+            <br>
+            <li>privacy Policy</li>
+            <br>
+            <li>Terms and Condition</li>
+            <br>
+        </ul>
+
+        <ul class="quickLinks">
+
+            <li style="padding-bottom:0.7rem">QUICK LINKS</li>
+      
+      
+            <br>
+            <li>Home</li>
+            <br>
+            <li>Inspiring Stories</li>
+            <br>
+            <li>important tips</li>
+            <br>
+            <li>Community</li>
+            <br>
+            <a href="contactUs.html">
+              <li>contact us</li>
+            </a>
+            <br><br>
+          </ul>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <ul class="socialHandle">
+            <li class="socialHandle"><a href="https://in.linkedin.com/"><img src="images/likedin.png" alt=""></a></li>
+            <li class="socialHandle"><a href="https://www.instagram.com/"><img src="images/Instagram-Icon 1.png"
+                        alt="instahandle_better brains"></a></li>
+            <li class="socialHandle"><img src="images/twitter-g7e517620c_1280 1.png" alt="twitter_better brains"></li>
+            <li class="socialHandle"><img src="images/facebook-gc8cdccf82_1280 1.png" alt="fb-Handle_better brains">
+            </li>
+            <li class="socialHandle"><a href="https://youtube.com/@BetterBrains-2005"><img
+                        src="images/youtube-g6d9f6337d_1280 1.png" alt="youtube_better brains"></a></li>
+        </ul>
+
+    </footer>
+    <script>
+        const eye = document.getElementById("eye")
+        const password = document.getElementById("password")
+        let a = true;
+        eye.addEventListener("click", () => {
+            if (a) {
+                password.setAttribute("type", "text")
+                eye.setAttribute("src", "SVG/eyeSlash.svg")
+                a = !a;
+            }
+
+
+            else {
+                password.setAttribute("type", "password")
+                eye.setAttribute("src", "SVG/eye.svg")
+                a = !a;
+            }
+
+        })
+    </script>
+    <script src="./frontendjs/signUp.js"></script>
+</body>
+
+</html>

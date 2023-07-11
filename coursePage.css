@@ -1,0 +1,134 @@
+@font-face {
+    font-family: lato;
+    src: url('./fonts/lato/lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url('./fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: montserrat-medium;
+    src: url('./fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: lato-bold;
+    src: url('./fonts/Lato-ExtraBold.ttf');
+}
+
+* {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D9F0EEC9;
+    /* height: 10vh; */
+}
+
+.active {
+    /* background-color: #009892; */
+    /* text-decoration: underline; */
+}
+
+.logo {
+
+    padding-top: 0.7rem;
+    padding-left: 7rem;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.login {
+
+    background-color: rgba(110, 250, 204, 0.67);
+    padding: 0.3rem 0.8rem;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.menu-bar {
+    display: none;
+}
+
+ul li {
+    font-size: 1.4rem;
+    display: inline-block;
+    font-family: lato;
+
+}
+
+.courseFeatures {
+    /* padding-top: 2vh; */
+    /* height:89vh; */
+    /* list-style-type: none; */
+    display: flex;
+    /* direction: ; */
+    /* flex-direction: column; */
+    /* justify-content: left; */
+    /* width:8%; */
+    /* gap: 2rem; */
+
+}
+
+.courseFeatures ul {
+    /* width: 100%; */
+    background-color: #E1F4F2;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    cursor: pointer;
+    /* gap: 2rem; */
+    font-family: lato;
+    font-weight: 700;
+    font-size: 0.7rem;
+    row-gap: 2rem;
+    height: 89.3vh;
+    padding-top: 2vh;
+
+    /* justify-content: center; */
+    align-items: left;
+
+}
+
+.courseFeatures ul li {
+    /* padding-top: 1.5rem; */
+    /* text-align: left; */
+    /* padding-left: -3rem; */
+}
+
+.active .courseFeatures li {
+    /* text-decoration: underline; */
+}
+.nameStrip{
+    display: flex;
+    background-color:#1D7BFF;
+    height:10vh;
+    width:92% ;
+    color: white;
+align-items: center;
+padding-left: 1.2rem;
+    
+}

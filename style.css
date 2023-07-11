@@ -1,0 +1,485 @@
+@font-face {
+    font-family: lato;
+    src: url('fonts/lato/lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: montserrat-medium;
+    src: url('fonts/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: lato-bold;
+    src: url('fonts/Lato-ExtraBold.ttf');
+}
+
+* {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D9F0EEC9;
+    /* height: 10vh; */
+}
+.active{
+    /* background-color: #009892; */
+    /* text-decoration: underline; */
+}
+.logo {
+
+    padding-top: 0.7rem;
+    padding-left: 7rem;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ 
+
+.login {
+
+    background-color: rgba(110, 250, 204, 0.67);
+    padding: 0.3rem 0.8rem;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+.menu-bar{
+    display: none;
+}
+
+
+.testbuddy {
+    padding: 0 1.3rem;
+    height: 20vh;
+    background-color: #1D7BFF;
+    display: flex;
+    /* height: fit-content; */
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.alignCenterMediaQuery {
+/* background-color: #1D7BFF; */
+    font-size: 2.8rem;
+    color: white;
+    font-family: lato;
+    justify-content: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* letter-spacing: 0.8px; */
+    /* align-items: center; */
+
+}
+
+/* this is style of slider  */
+
+
+
+
+/* Style the next and previous buttons, the caption text and the dots: */
+
+/* Example */
+/* * {
+    box-sizing: border-box
+  } */
+
+/* Slideshow container */
+
+.slideshow-container {
+    /* max-width: 1000px; */
+    position: relative;
+    /* margin: auto; */
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    /* width: 33vw; */
+    /* height: 7vw; */
+    width: 33vw;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    /* top: 50%; */
+    /* width: auto; */
+    /* margin-top: -22px; */
+    /* padding: 16px; */
+    /* color: white; */
+    /* font-weight: bold; */
+    /* font-size: 18px; */
+    /* transition: 0.6s ease; */
+    /* border-radius: 0 3px 3px 0; */
+    /* user-select: none; */
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 11%;
+    top: 25%;
+    /* border-radius: 3px 0 0 3px; */
+} 
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+   */
+/* Caption text */
+
+
+/* Number text (1/3 etc) */
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+/* .fade {
+    animation-name: mymove;
+    animation-duration: 1.5s;
+    
+} */
+
+/* @keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+} */
+
+/* .arrow {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 88%;
+  padding: 10px 10px;
+  height: 2.7vw;
+} */
+
+
+
+
+
+
+/*  this is style of slider  */
+
+.bannerSaarthi {
+
+
+    width: 33vw;
+
+}
+
+/* .imgContainer {
+    position: relative;
+    top: auto;
+    z-index: 1;
+
+} */
+
+.arrow {
+    position: absolute;
+    z-index: 1;
+    top: 17%;
+    left: 94.6%;
+    padding: 10px 10px;
+    height: 2.7vw;
+}
+
+.slider img {
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+
+.freeTrialContainer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.freeTrial {
+
+    height: 6vh;
+    width: 15vw;
+   text-align: center;
+    margin-top: 2.4rem;
+    /* display: flex;
+    justify-content: center;
+    */
+    /* margin-left: 42vw; */
+    background: #D9F0EE;
+    font-family: lato;
+    font-weight: 800;
+    font-size: larger;
+    border-radius: 10px;
+    color: #009892;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+    margin-bottom: 4rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* .freeTrial{
+
+    height: 6vh;
+    width: 15vw;
+    margin-top: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 42vw;
+    background: #D9F0EE;
+    font-family: lato;
+    font-weight: 800;
+    font-size: larger;
+    border-radius: 10px;
+    color: #009892;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+} */
+
+
+/* coursecontainer design */
+.myCourse {
+    background-image: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(233, 255, 248, 0.35) 100%);
+    box-shadow: 0px 0px 77px rgba(48, 140, 136, 0.33);
+
+}
+
+.ourCoursesText {
+
+    font-family: lato-bold;
+    
+    font-weight: 800;
+    text-decoration: underline;
+    margin-bottom: 4rem;
+    padding-left: 20rem;
+    padding-top: 4rem;
+
+}
+
+
+.courses {
+    /* list-style-type: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 8rem; */
+    /* row-gap: 40rem; */
+}
+
+.coursesContainer {
+    /* padding-bottom: 4rem; */
+    /* display: flex;
+    row-gap: 4rem; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+list-style-type: none;
+/* justify-content: center; */
+/* align-items: center; */
+text-align:end;
+column-gap: 8rem;
+row-gap: 4rem;
+padding-bottom:4rem ;
+}
+.gridAlign{
+    text-align: left;
+}
+
+
+
+/* end */
+
+
+
+.ourSpecialities {
+    font-family: lato-bold;
+    /* font-weight: 900; */
+    padding-left: 9vw;
+    margin-top: 8vh;
+    /* font-size: 2rem; */
+    letter-spacing: 0.1rem;
+
+}
+
+.speciality_container {
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+.veryFirstSpeciality {
+    margin-top: 2rem;
+    font-family: montserrat-regular;
+    font-size: 1.5rem;
+    width: 70%;
+    text-align: center;
+}
+
+
+.testInterfaceImage {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+    margin: 3rem;
+    margin-bottom: 5rem;
+}
+
+.firstSpeciality {
+    font-family: montserrat-regular;
+    font-size: 1.5rem;
+    margin: 3rem;
+}
+
+.secondSpeciality {
+    width: 70%;
+    text-align: center;
+    margin: 3rem;
+
+}
+
+.analysisChartPhoto {
+    /* margin: rem; */
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5rem;
+
+}
+
+.videoSolution {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5rem;
+}
+
+.secondSpeciality {
+    /* font-family: montserrat-regular; */
+    font-size: 1.5rem;
+    /* margin: 4rem */
+    /* padding-top: 63rem; */
+}
+
+.speciality_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: lato;
+    font-weight: 600;
+}
+
+.gradient {
+    /* background-image: linear-gradient(180deg, #FFFFFF 0%, #E2FEF5 100%); */
+    /* background: linear-gradient(180deg, #FFFFFF 70.65%, #E2FEF5 100%); */
+    background: linear-gradient(180deg, #FFFFFF 62.13%, #E2FEF5 100%);
+
+}
+
+.footerElements {
+    padding-top: 4vh;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    justify-content: center;
+    padding-left: 10rem;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+
+}
+.apniHakeekat{
+    padding-top: 1%;
+    width: 70%;
+    text-align: left;
+}
+.quickLinks{
+    line-height: 3rem;
+}
+.infoBetterBrains{
+    line-height: 3rem;
+}
+
+.footerElements ul {
+    list-style-type: none;
+}
+
+.socialHandle {
+    display: flex;
+    gap: 1.3rem;
+    justify-content: end;
+    align-items: center;
+
+}
+
+ul li {
+    font-size: 1.4rem;
+    display: inline-block;
+    font-family: lato;
+
+}
+
+.paddingSocialHandle {
+    padding-right: 8vw;
+    /* padding-bottom: 0; */
+    margin-top: 3vh;
+}
+
+footer {
+    font-family: lato;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 40vh;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+

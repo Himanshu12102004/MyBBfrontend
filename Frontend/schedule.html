@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #price {
+      /* height: 50px; */
+      width: 100px;
+    }
+    .syllabus{
+      height:80px;
+width:600px;
+    }
+    .options {
+      height: 70px;
+      width: 200px;
+    }
+    #testName {
+      width: 600px;
+    }
+    #solnImg {
+      width: 600px;
+    }
+  </style>
+  <body>
+    <div>Course name</div>
+    <textarea id="courseName"></textarea>
+
+    <div>price</div>
+    <textarea id="price"></textarea>
+    <div>test name</div>
+    <textarea id="testName"></textarea>
+
+    <div>date</div>
+
+    <input id="day" type="date"></input>
+
+    <div>startTime</div>
+    <input type="time" id="startTime" ></input>
+    <div>end Time</div>
+    <input type="time" id="endTime"></input>
+    <div>physics syllabus</div>
+
+    <textarea class="syllabus" id="physics" ></textarea>
+
+    <div>chemistry syllabus</div>
+
+    <textarea class="syllabus" id="chemistry" ></textarea>
+    <div>Maths syllabus</div>
+
+    <textarea class="syllabus" id="maths" ></textarea>
+
+    <br />
+    <button id="submit">Submit</button>
+  </body>
+  <script>
+    const submit = document.getElementById("submit");
+    submit.addEventListener("click", async () => {
+      const price = parseInt(document.querySelector("#price").value);
+      const [startHour,startMinute] = document.getElementById("startTime").value.split(":");
+      const  [endHour,endMinute]= document.getElementById("endTime").value.split(":");
+      const testName = document.getElementById("testName").value;
+      const courseName = document.getElementById("courseName").value;
+      const [year,month,date] = document.getElementById("day").value.split("-");
+      const physicsSyllabus=document.getElementById("physics").value.split(",");
+      const chemistrySyllabus=document.getElementById("chemistry").value.split(",");
+      const mathsSyllabus=document.getElementById("maths").value.split(",");
+
+      console.log(year,month,date)
+      const reqBody = {
+        courseName,
+        price,
+        testName,
+        day:{
+          date,month,year
+        },
+        startTime:{hour:startHour,minute:startMinute},
+        endTime:{hour:endHour,minute:endMinute},
+        physicsSyllabus:physicsSyllabus,chemistrySyllabus:chemistrySyllabus,mathsSyllabus:mathsSyllabus
+      };
+      console.log(reqBody);
+      const response = await fetch("http://127.0.0.1:3001/postschedule", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(reqBody),
+      });
+      const respo = await response.json();
+      if (respo.success) alert("data sent");
+      else alert("data not sent");
+    });
+  </script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #question {
+      height: 100px;
+      width: 800px;
+    }
+    .options {
+      height: 70px;
+      width: 200px;
+    }
+    #qDiag {
+      width: 600px;
+    }
+    #solnImg {
+      width: 600px;
+    }
+  </style>
+  <body>
+    <div>Question Paper name</div>
+    <textarea id="qp"></textarea>
+
+    <div>Question</div>
+    <textarea id="question"></textarea>
+    <div>Write question diag url If any</div>
+    <textarea id="qDiag"></textarea>
+
+    <div>Options</div>
+
+
+    <textarea class="options a1"></textarea>
+    <textarea class="options a2"></textarea>
+    <textarea class="options a3"></textarea>
+    <textarea class="options a4"></textarea>
+    <div>Answers For Single and multi correct ans</div>
+    <textarea id="singleMulti"></textarea>
+    <div>Integer Or Decimal Ans</div>
+    <textarea id="intAns"></textarea>
+    <div>Solution img Link</div>
+    <textarea id="solnImg"></textarea>
+    <div >video link</div>
+    <textarea id="solnVid"></textarea>
+    
+    
+    <br />
+    <button id="submit">Submit</button>
+  </body>
+  <script>
+    const submit = document.getElementById("submit");
+    submit.addEventListener("click", async () => {
+      const question = document.querySelector("#question").value;
+      const optionsElem = document.querySelectorAll(".options");
+      const options = [];
+      for (let i = 0; i < 4; i++) {
+        console.log(optionsElem[i].value);
+        options[i] = optionsElem[i].value;
+      }
+      const ansOptions = document
+        .getElementById("singleMulti")
+        .value.split(",");
+      const integerAns = document.getElementById("intAns").value;
+      const qDiag = document.getElementById("qDiag").value;
+      const name = document.getElementById("qp").value;
+const solnImg=document.getElementById("solnImg").value
+const solnVid=document.getElementById("solnVid").value
+
+      const reqBody = {
+        name,
+        qDiag,
+        question,
+        options,
+        ansOptions,
+        integerAns,
+        solnImg,solnVid
+      };
+      console.log(reqBody);
+      const response = await fetch("http://127.0.0.1:3008/data", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(reqBody),
+      });
+      const respo = await response.json();
+      if (respo.success) alert("data sent");
+      else alert("data not sent");
+    });
+  </script>
+</html>

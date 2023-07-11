@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Brains</title>
+    <link rel="shortcut icon" href="../images/FAVICON.png" type="image/x-icon">
+    <link rel="stylesheet" href="testInterFace.css">
+    <style>
+        .vertical-line {
+            border-right: 1px solid black;
+            height: 20px;
+            height: fit-content;
+        }
+    </style>
+
+<script>
+    window.onload = function() {
+      var options = document.querySelectorAll('input[name="option"]');
+      
+      // Load previously stored response from local storage
+      var storedResponse = localStorage.getItem('testResponse');
+      if (storedResponse) {
+        var storedOption = document.querySelector(`input[value="${storedResponse}"]`);
+        if (storedOption) {
+          storedOption.checked = true;
+        }
+      }
+      
+      options.forEach(function(option) {
+        option.addEventListener('change', function() {
+          var selectedOption = document.querySelector('input[name="option"]:checked');
+          if (selectedOption) {
+            localStorage.setItem('testResponse', selectedOption.value);
+          }
+        });
+      });
+    };
+  </script>
+</head>
+
+<body>
+    <div class="blueBar"></div>
+
+    <div class="questionSection">
+
+        <!-- <div style="display: block;">time left:</div> -->
+
+
+        <ul class="sections">
+            <div class="vertical-line">
+                <li> PHYSICS Section A </li><img src="../images/info.png" alt="" class="infoBtn">
+            </div>
+            <div class="vertical-line">
+                <li>PHYSICS Section B </li><img src="../images/info.png" alt="" class="infoBtn">
+            </div>
+            <div class="vertical-line">
+                <li>CHEMISTRY Section A </li><img src="../images/info.png" alt="" class="infoBtn">
+            </div>
+            <div class="vertical-line">
+                <li>CHEMISTRY Section B </li><img src="../images/info.png" alt="" class="infoBtn">
+            </div>
+            <div class="vertical-line">
+                <li>MATHS Section A </li><img src="../images/info.png" alt="" class="infoBtn">
+            </div>
+            <div>
+                <li>MATHS Section B </li><img src="../images/info.png" alt="" class="infoBtn">
+            </div>
+        </ul>
+    </div>
+
+    <div class="blueBar"></div>
+
+    <!-- question monitor -->
+    <div class="monitor">
+        <div class="questionNumberX">
+            <div class="questionNumber">Question no. <span></span></div>
+            <div class="question">A body of mass M is kept on a rough horizontal surface (friction coefficient ). A
+                person is trying
+                to pull the body by applying a horizontal force but the body is not moving. The force by the
+                surface on the body is F, then</div>
+            <div class="options">
+                <label>
+                    <input type="radio" name="option" value="option1"> Option 1
+                </label><br>
+                <label>
+                    <input type="radio" name="option" value="option2"> Option 2
+                </label><br>
+                <label>
+                    <input type="radio" name="option" value="option3"> Option 3
+                </label><br>
+                <label>
+                    <input type="radio" name="option" value="option4"> Option 4
+                </label><br>
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="questionPalleteContainer">
+            <div class="questionPallete">
+
+
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+                <div onclick="redirectTo(1)" class="questionButton">1</div>
+
+
+            </div>
+            <div class="questionStatus">
+                <div class="box">09</div>
+                <div >not visited</div>
+                <div class="box">25</div>
+                <div>not answered</div>
+                <div class="box">42</div>
+                <div>Answered</div>
+                <div  class="box">69</div>
+                <div>marked for review</div>
+                <div class="box">76</div>
+                <div class="boxinfo">Answered and marked for review(will be considered for evaluatoin)</div>
+            </div>
+        </div>
+    </div>
+
+
+    <button type="button" onclick="clearResponse()">Clear Response</button>
+
+    <script>
+        var options = document.querySelectorAll('input[name="option"]');
+
+        // options.forEach(function(option) {
+        //   option.addEventListener('change', function() {
+        //     options.forEach(function(otherOption) {
+        //       if (otherOption !== option) {
+        //         otherOption.checked = false;
+        //       }
+        //     });
+        //   });
+        // });
+
+        function clearResponse() {
+            options.forEach(function (option) {
+                option.checked = false;
+            });
+        }
+    </script>
+
+
+
+
+</body>
+
+
+</html>

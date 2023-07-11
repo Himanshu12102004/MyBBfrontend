@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Better Brains</title>
+    <link
+      rel="shortcut icon"
+      href="../images/FAVICON.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="testInterFace.css" />
+  </head>
+
+  <body>
+    <div class="blueBar"></div>
+    <div class="questionSection">
+      <ul class="sections">
+        <li>PHYSICS Section A</li>
+        <img src="../images/info.png" alt="" class="infoBtn" />
+        <li>PHYSICS Section B</li>
+        <img src="../images/info.png" alt="" class="infoBtn" />
+        <li>CHEMISTRY Section A</li>
+        <img src="../images/info.png" alt="" class="infoBtn" />
+        <li>CHEMISTRY Section B</li>
+        <img src="../images/info.png" alt="" class="infoBtn" />
+        <li>MATHS Section A</li>
+        <img src="../images/info.png" alt="" class="infoBtn" />
+        <li>MATHS Section B</li>
+        <img src="../images/info.png" alt="" class="infoBtn" />
+      </ul>
+    </div>
+    <div class="blueBar"></div>
+
+    <!-- question monitor -->
+    <div class="monitor">
+      <div class="questionNumberX">
+        <div class="questionNumber">Question no. <span></span></div>
+        <div class="question">
+          A body of mass M is kept on a rough horizontal surface (friction
+          coefficient ). A person is trying to pull the body by applying a
+          horizontal force but the body is not moving. The force by the surface
+          on the body is F, then
+        </div>
+        <div class="options">
+          <input type="radio" id="option-1" value="" />
+            <label for="option-1">HTML</label><br />
+            <input type="radio" id="option-2" value="" />  
+          <label for="option-2">CSS</label><br />
+            <input type="radio" id="option-3" value="" />  
+          <label for="option-3">JavaScript</label><br />
+            <input type="radio" id="option-4" value="" />  
+          <label for="option-4"></label><br />
+        </div>
+      </div>
+
+      <div class="questionPallete"></div>
+      <div id="questions"></div>
+
+      <button id="submit">Submit</button>
+    </div>
+    <script src="./frontendjs/questionPaper.js"></script>
+  </body>
+</html>

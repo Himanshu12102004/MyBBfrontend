@@ -1,0 +1,84 @@
+@font-face {
+    font-family: lato;
+    src: url('fonts/lato/lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: montserrat-medium;
+    src: url('fonts/Montserrat-Medium.ttf');
+}
+
+* {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navtab a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul li {
+    font-size: 1.4rem;
+    display: inline-block;
+    font-family: lato;
+
+}
+
+
+
+.logo {
+
+    padding-top: 0.7rem;
+    padding-left: 7rem;
+}
+
+
+
+.navtab {
+    background-color: #D9F0EEC9;
+
+    height: 10vh;
+
+}
+
+.login {
+
+    background-color: rgba(110, 250, 204, 0.67);
+    padding: 0.3rem 0.8rem;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 1.2rem;
+
+    letter-spacing: 0.1rem;
+}
+
+.name{
+    /* width:100vw; */
+    height: 3rem;
+    background-color: #1D7BFF;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}

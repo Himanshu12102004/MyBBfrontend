@@ -1,0 +1,178 @@
+@font-face {
+    font-family: lato;
+    src: url('../fonts/lato/lato-Bold.ttf');
+}
+@font-face {
+    font-family: lato-bold;
+    src: url('../fonts/Lato-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+* {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navtab a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul li {
+    font-size: 1.4rem;
+    display: inline-block;
+    font-family: lato;
+
+}
+
+
+
+.logo {
+
+    padding-top: 0.7rem;
+    padding-left: 7rem;
+}
+
+
+
+.navtab {
+    background-color: #D9F0EEC9;
+border-bottom: 1.5px solid  #3AA299;
+    height: 10vh;
+
+}
+
+.login {
+
+    background-color: rgba(110, 250, 204, 0.67);
+    padding: 0.3rem 0.8rem;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 1.2rem;
+
+    letter-spacing: 0.1rem;
+}
+/* .heading{
+    
+    background-image: linear-gradient( #CBECE9
+    ,#FFFEFE00);
+    height: 4vh;
+    
+    border-top-style: solid;
+    border-color: gray;
+    border-width: 1.5px;
+    padding-top: 4rem;
+    
+} */
+   
+/* .brahamastra{
+    font-family: lato;
+    font-weight: 800;
+    font-size: 2rem;
+    /* width: 25vw; 
+    text-align: center;
+} */
+.courseObjective{
+    width:65vw;
+    flex:1 0 auto;
+    font-family: lato-bold;
+    font-weight: 700;
+    font-size: 2.2rem;
+    /* text-align: center; */
+}
+/* .courseDetails{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    font-family: montserrat-regular;
+    font-weight: 400;
+    width: 50vw;
+    margin-top: 3vh;
+    line-height: 3vh;
+    font: 1.5rem;
+  
+} */
+/* .courseDetails h3{
+    font-family: lato;
+    font-weight: 700;
+    
+} */
+/* .courseDetails img{
+    display:flex;
+    justify-content: top;
+   
+    /* align-items: last baseline; 
+    padding-left: 0%;
+
+} */
+.brahmastraBox{
+    display: flex;
+    align-items: center;
+    gap:4rem;
+    margin-left: 6rem;
+    /* font-family:  montserrat-regular; */
+    margin-top: 3.5rem;
+
+}
+.brahamastra{
+   
+    /* text-shadow: 0px 0px 2px #003733; */
+  /* font-size: 2rem; */
+
+  
+}
+.courseDetails{
+    font-family:  montserrat-regular;
+    font-weight:400 ;
+   font-size: 1.2rem;
+}
+.headingCourseFeature{
+    font-family: lato;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.features {
+    font-family: montserrat-regular ;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+}
+.courseFeature{
+    margin-top: 8vh;
+    padding-left: 6rem;
+}
+.column1BrahamastraBox{
+    align-items: center;
+}
+.getEnrolled{
+    /* margin-top: 20vh; */
+    /* padding-top: 10vh; */
+    /* align-items: end; */
+    padding-top: 6.7vh;
+}
+.freeSpace{
+height: 40vh;
+}
+.downloadSchedule{
+    color:  #3AA299;
+    /* font-family: lato; */
+    font-size: 1.5rem;
+}

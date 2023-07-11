@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="images/FAVICON.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Better Brains</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaQueryHome.css">
+
+</head>
+
+<body>
+
+  <nav class="navtab">
+    <div>
+      <img class="logo" src="images/logo 3 transparent 2.png" alt="better brains" />
+    </div>
+    <ul>
+      <li><a href="index.html"> home</a></li>
+      <li><a href="inspiring Stories.html">inspiring stories</a></li>
+      <li id="importantTips">important tips</li>
+      <a href="contactUs.html">
+        <li id="contactUs">contact us</li>
+      </a>
+      <li>Community</li>
+      <li class="login"> <a href="login.html"> login/sign-up </a></li>
+      <!-- <img src="SVG/bars-solid.svg" alt="menuBar" class="menuBarIcon"> -->
+      <img class="menu-bar" src="SVG/bars-solid.svg" alt="menu-bar">
+    </ul>
+  </nav>
+  
+  
+  <div class="testbuddy">
+    <div class="alignCenterMediaQuery">
+      
+      <p class="testbuddyTextWidth">
+        Only place to analyse your preparation with jee buddies and mentors to
+        ace the dream of IIT JEE..!
+      </p>
+    </div>
+    <!-- <div>
+      <img src="images/banner 1.png" alt="better brains" class="bannerSaarthi" />
+      <div class="arrowContainer">
+        <img class="arrow" src="images/arrow.png" alt="next" />
+      </div>
+    </div> -->
+    <!-- this is slider -->
+    
+    <!-- Slideshow container  -->
+    <div class="slideshow-container">
+      
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="images/banners/banner 1 (2).png" style="">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="images/banners/banner 2.png" style="">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="images/banners/banner 3.png" style="">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="images/banners/banner 4.png" style="">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="images/banners/banner 5.png" style="">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="images/banners/banner 6.png" style="">
+      </div>
+      
+      <!-- Next and previous buttons -->
+      <!-- <a class="prev" onclick="plusSlides(-1)"> &#10094; </a> -->
+      <a class="next" onclick="plusSlides(1)"> <img class="arrow" src="images/arrow.png" alt="next" /></a>
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- <br> -->
+    
+    <!-- The dots/circles -->
+    <!-- <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div> -->
+    
+    <h1 id="name"></h1>
+    <script>
+      // Example
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setInterval(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+
+    <!-- this is end of slider code -->
+  </div>
+
+
+
+  <div class="sliderContainer">
+    <div class="slider">
+      <img src="images/QUOTE AND PER DAY THINGS (2).png" alt="dreams dont work until you do" />
+    </div>
+  </div>
+
+  <div class="freeTrialContainer">
+    <div class="freeTrial">
+      <h2>Take a Free Trial</h2>
+    </div>
+  </div>
+
+
+
+  <div class="myCourse">
+    <div>
+      <h1 class="ourCoursesText">OUR COURSES</h2>
+    </div>
+    <div class="coursesContainer">
+      <!-- <ul class="courses"> -->
+
+
+      <li class="design"> <a href="./MY COURSES/pyq1.html"> <img src="./images/coursesNew/pyq 1.png" alt="pyq1"></a></li>
+      <li class="design gridAlign"> <a href="./MY COURSES/pyq2.html"> <img src="./images/coursesNew/pyq 2.png" alt="pyq2"></a></li>
+
+
+      <!-- </ul> -->
+      <!-- <br> -->
+      <!-- <ul class="courses"> -->
+
+      <li class="design"> <a href="./MY COURSES/samarpan1.html"> <img src="./images/coursesNew/samarpan 1 (1).png" alt="samarpan1"></a>
+      </li>
+      <li class="design gridAlign"> <a href="./MY COURSES/samarpan2.html"> <img src="./images/coursesNew/samarpan 2 (1).png"
+            alt="samarpan2"></a></li>
+      <!-- </ul> -->
+      <!-- <br> -->
+      <!-- <ul class="courses"> -->
+
+      <li><a href="./MY COURSES/prarmbh1.html"> <img src="./images/coursesNew/prarambh 1.png" alt="prarambh1" /></a></li>
+      <li class="gridAlign"><a href="./MY COURSES/prarambh2.html"><img src="./images/coursesNew/prarambh 2.png" alt="prarambh 2" /></a>
+      </li>
+
+      <!-- </ul> -->
+      <!-- <br> -->
+      <!-- <ul class="courses"> -->
+
+      <li><a href="./MY COURSES/saarthi1.html"> <img src="./images/coursesNew/SARTHI 1 (1).png" alt="saarthi1" /></a> </li>
+      <li class="gridAlign"><a href="./MY COURSES/saarthi2.html"> <img src="./images/coursesNew/SARTHI 2 (1).png" alt="saarthi2" /></a>
+      </li>
+      <!-- </ul> -->
+      <!-- <br> -->
+      <!-- <ul class="courses"> -->
+
+      <li> <a href="./MY COURSES/brahamastra.html"> <img src="./images/coursesNew/BRAHMASTRA (1).png" alt="brahamastra"></a></li>
+      <li class="gridAlign"> <a href="./MY COURSES/kawach.html"> <img src="images/coursesNew/KAWACH (1).png" alt="kawach" /></a></li>
+      <!-- </ul> -->
+      <!-- <br> -->
+      <!-- <ul class="courses"> -->
+
+      <li> <a href="./MY COURSES/yodha1.html"> <img src="./images/coursesNew/yodha 1.png" alt="yodha1"></a></li>
+      <li class="gridAlign"> <a href="./MY COURSES/yodha2.html"> <img src="./images/coursesNew/yodha 2.png" alt="yodha2"></a></li>
+
+      <!-- </ul> -->
+      <!-- <br> -->
+    </div>
+  </div>
+
+
+
+  <h1 class="ourSpecialities">OUR SPECIALITIES</h1>
+  <div class="gradient">
+    <div class="speciality_container">
+      <p class="veryFirstSpeciality">we are the only ones who provide you with one to one JEE MAINS interface so that
+        you
+        can practice on the right interface and be used to with the interaface you’re gonna get to see in your
+        Exam.....,But sorry we dont provide the glitches offered by JEE MAINS 😉 </p>
+      <img src="images/TEST INTERFACE.png" alt="test interface_image" class="testInterfaceImage">
+
+      <p class="firstSpeciality">Best in class analysis report with only required parameters needed to do perefect
+        analysis of a test. </p>
+      <img src="images/analysis.png" alt="analsisreport" class="analysisChartPhoto">
+
+
+      <p class="secondSpeciality">Handmade VIDEO SOLUTIONS of each and every
+
+        question made by IITians and NITians all over india with their personalized techniques.</p>
+      <img src="images/video solution (1).png" alt="videosolution_img" class="videoSolution">
+    </div>
+  </div>
+
+  <footer class="footer" style="background-color: #1D7BFF;">
+
+
+    <!-- <div></div> -->
+    <div class="footerElements">
+
+      <p class="apniHakeekat" style="">
+
+        Better Brains is one of the leading platforms of
+        INDIA to Perform, Analyze& improve your JEE
+        preparation so that you can achieve your dream of IITs & NITs.
+      </p>
+
+
+      <ul class="infoBetterBrains" style=" ">
+
+        <li>BETTER BRAINS</li>
+        <br>
+        <!-- <li> </li> -->
+        <a href="aboutUs.html">
+          <li>About us</li>
+        </a>
+        <br>
+        <li>privacy Policy</li>
+        <br>
+        <li>Terms and Condition</li>
+        <br><br>
+
+      </ul>
+
+
+      <ul class="quickLinks">
+
+        <li>QUICK LINKS</li>
+        <br>
+        <li>Home</li>
+        <br>
+        <li>Inspiring Stories</li>
+        <br>
+        <li>important tips</li>
+        <br>
+        <li>Community</li>
+        <br>
+        <a href="contactUs.html">
+          <li>contact us</li>
+        </a>
+        <br>
+
+      </ul>
+    </div>
+
+    <!-- <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div> -->
+    <ul class="socialHandle paddingSocialHandle">
+      <li class="socialHandle"><a href="https://in.linkedin.com/" target="_blank"><img src="images/likedin.png"
+            alt=""></a></li>
+
+      <li class="socialHandle"><a href="https://www.instagram.com/" target="_blank"><img
+            src="images/Instagram-Icon 1.png" alt="instahandle_better brains"></a></li>
+
+      <li class="socialHandle"><img src="images/twitter-g7e517620c_1280 1.png" alt="twitter_better brains"></li>
+      <li class="socialHandle"><img src="images/facebook-gc8cdccf82_1280 1.png" alt="fb-Handle_better brains"></li>
+      <li class="socialHandle"><a href="https://youtube.com/@BetterBrains-2005" target="_blank"><img
+            src="images/youtube-g6d9f6337d_1280 1.png" alt="youtube_better brains"></a></li>
+
+    </ul>
+
+  </footer>
+  <script>
+    // let contactUs = document.getElementById("contactUs");
+    // let url = "contactUs.html";
+    // // let features="height:auto";
+    // contactUs.addEventListener("click", function () {
+    //   window.open(url, "contactUs ")
+    // });
+  </script>
+  <script src="./frontendjs/home.js"></script>
+</body>
+
+</html>

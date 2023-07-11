@@ -1,0 +1,502 @@
+/* media query for nav bar */
+@media screen and (max-width:800px) {
+    body {
+        background: #E3FFFB;
+    }
+
+    .logo {
+        /* background-color: #000000; */
+        padding-left: 2rem;
+        width: 80%;
+
+    }
+
+    nav ul li {
+        display: none
+    }
+
+    .menu-bar {
+        display: block;
+        right: 1rem;
+    }
+
+
+
+
+    .slider img {
+        /* width: 40%; */
+
+        /* justify-content: center; */
+        /* text-align: center; */
+    }
+
+    .slider {
+        display: none;
+        /* margin-top: 1rem; */
+    }
+
+
+
+    .testbuddy {
+        /* height: 14vh; */
+        display: block;
+        background-color: #E3FFFB;
+        box-shadow: 0px 0px 0px #000000;
+        width: 100%;
+        padding-left: 0px;
+        /* width: 100%; */
+        padding-right: 0px;
+        height: fit-content;
+
+
+
+
+    }
+
+    .alignCenterMediaQuery {
+        position: relative;
+        /* position: absolute; */
+        /* top: 50%; */
+        /* display: inline-block; */
+        font-size: 1.2rem;
+        /* width: 100%; */
+        background-color: #1D7BFF;
+        height: 14vh;
+        text-align: center;
+        /* vertical-align: middle; */
+        padding: 0%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .testbuddyTextWidth {
+        position: absolute;
+        top: 20%;
+    }
+
+    .mySlides {
+        text-align: center;
+
+        /* width: 100%; */
+    }
+
+    .slideshow-container img {
+        margin-top: 1.2rem;
+        width: 80%;
+        filter: drop-shadow(0px 0px 15px rgba(48, 140, 136, 0.5));
+        text-align: center;
+
+    }
+
+    .freeTrial {
+        font-size: 0.7rem;
+        margin-top: 1.2rem;
+        /* height: 7vh; */
+        /* width: 30vw; */
+        width: fit-content;
+        border-radius: 5px;
+        padding: 0.3rem 1rem;
+
+    }
+
+
+
+    .next {
+        /* display: inline-block; */
+        /* height: 3vh; */
+        /* width: 5vh; */
+
+        /* width: 5vh; */
+        /* left: 50%; */
+        /* top: 19%; */
+    }
+
+    .arrow {
+        /* height:3.7vw; */
+        /* width:auto; */
+        /* top: 50%; */
+        /* right: 100%; */
+        /* left: -30%; */
+        /* padding: 10px 10px; */
+    }
+
+    .myCourse {
+        margin-top: -2rem;
+        background-image: none;
+        box-shadow: none;
+        background-color: #E3FFFB;
+
+        /* margin-bottom: 0px; */
+
+    }
+
+    .coursesContainer {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        row-gap: 0.2rem;
+    }
+
+    .gridAlign {
+        text-align: center;
+    }
+
+    .coursesContainer li img {
+        width: 50%;
+        /* height: auto; */
+        /* text-align: center; */
+    }
+
+    .gradient img {
+        width: 70%;
+        height: auto;
+    }
+
+    .ourCoursesText {
+        margin-bottom: 1rem;
+        padding-left: 3.1rem;
+        padding-top: 0rem;
+        font-size: 0.5rem;
+    }
+
+    .coursesContainer {
+        padding-bottom: 0px;
+    }
+
+    .footerElements {
+        padding-top: 2vh;
+        padding-left: 1rem;
+        font-size: 0.8rem;
+        grid-template-columns: 35% 30% 35%;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    footer {
+        height: auto;
+        width: 100%;
+    }
+
+    .quickLinks li {
+        /* line-height: 1.3rem; */
+        /* font-size: 1rem; */
+        font-size: 0.8rem;
+
+    }
+
+    .quickLinks {
+        line-height: 1.6rem;
+    }
+
+    .infoBetterBrains {
+        line-height: 1.8rem;
+    }
+
+    .infoBetterBrains li {
+        /* line-height: 2rem; */
+        font-size: 0.8rem;
+    }
+
+    .socialHandle {
+
+        gap: 0.5rem;
+        /* height: 15px; */
+        /*  */
+    }
+
+    .socialHandle img {
+        height: 15px;
+    }
+
+    .paddingSocialHandle {
+        padding-right: 2vw;
+    }
+
+    .ourSpecialities {
+        font-size: 1.6rem;
+        padding: 0px;
+        text-align: center;
+        margin-top: 0rem;
+        /* margin-bottom: 0rem; */
+    }
+
+    .speciality_container p {
+        font-size: 0.8rem;
+        text-align: center;
+        /* margin-:1.5rem 0rem; */
+    }
+
+    .secondSpeciality {
+        /* font-size: 1.4rem; */
+        margin-bottom: 0px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .firstSpeciality {
+        margin: 0px;
+        margin-top: 0.2rem;
+        width: 90%;
+        text-align: center;
+    }
+
+    .veryFirstSpeciality {
+        width: 90%;
+        text-align: center;
+        margin-top: 1.2rem 0;
+    }
+
+    .gradient {
+        /* background-color: #E3FFFB; */
+        background-image: none;
+    }
+
+    .testInterfaceImage {
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+
+    .analysisChartPhoto {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .secondSpeciality {
+        /* margin-top: 1rem; */
+        /* margin-bottom: 3rem; */
+    }
+
+    .secondSpeciality {
+        margin-top: 1.5rem;
+    }
+
+    .videoSolution {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .apniHakeekat {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:434px) {
+    .alignCenterMediaQuery {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:434px) and (max-width:491px) {
+    .ourCoursesText {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media screen and (min-width:491px) and (max-width:800px) {
+    .ourCoursesText {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width:500px) and (max-width:800px) {
+    .coursesContainer li img {
+        width: 35%;
+    }
+}
+
+
+
+
+@media screen and (min-width:801px) and (max-width:1055px) {
+    .logo {
+        padding-left: 2rem;
+        width: 60%;
+        padding-top: 0.15rem;
+    }
+
+    nav ul {
+        width: 90%;
+    }
+
+    nav ul li {
+        font-size: 0.7rem;
+        /* width: ; */
+    }
+
+    .login {
+        font-size: 0.5rem;
+        letter-spacing: 0.05rem;
+        padding: 0.15rem 0.4rem;
+        border-radius: 3px;
+
+
+
+    }
+
+    .slideshow-container {
+        /* width: 50%; */
+    }
+
+    .testbuddy {
+        padding: 0 0.9rem;
+
+    }
+
+    .mySlides {
+        /* width: 60%; */
+    }
+
+    .mySlides img {
+        /* width: 100%; */
+        /* width: 40vw; */
+        /* height: none; */
+        /* width:35vw; */
+        /* width: fit-content; */
+        /* width: 100%; */
+        /* height: 120%; */
+    }
+
+
+
+    .alignCenterMediaQuery {
+        font-size: 1.4rem;
+        /* justify-content: left; */
+    }
+
+    .slider img {
+        /* width: 60%; */
+        /* text-align: center; */
+        width: 50%;
+        /* width: fit-content; */
+
+    }
+
+    .freeTrial {
+        height: 6vh;
+        width: fit-content;
+        padding: 0.1rem 0.7rem;
+        font-size: 0.8rem;
+        border-radius: 2px;
+    }
+
+    .ourCoursesText {
+        padding-left: 6rem;
+        padding-top: 2rem;
+        margin-bottom: 3rem;
+        font-size: 1.3rem;
+    }
+
+    .coursesContainer {
+        column-gap: 6rem;
+row-gap: 3rem;
+
+
+    }
+    .myCourse{
+        margin-top: -1.5rem;
+ 
+    }
+
+
+    .coursesContainer img {
+        width: 50%;
+    }
+
+    .ourSpecialities {
+        font-size: 1.5rem;
+        padding-left: 4.5vw;
+        letter-spacing: 0rem;
+    }
+
+    .gradient img {
+        width: 60%;
+    }
+    .gradient p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+
+    .speciality_container {
+        /* display: flex; */
+        /* text-align: center; */
+        /* justify-content: center; */
+    }
+
+    .speciality_container p {
+
+        /* margin-:1.5rem 0rem; */
+    }
+
+    .footerElements {
+        padding-left: 3rem;
+        grid-template-columns: 35% 35% 30%;
+
+    }
+
+    .paddingSocialHandle {
+        margin-top: 5vh;
+        padding-right: 1.5rem;
+    }
+
+    .paddingSocialHandle img {
+        /* width: 50%; */
+        height: 20px;
+    }
+
+    .socialHandle {
+        /* width: 50%; */
+        /* font-size: 40%; */
+
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .quickLinks li {
+        font-size: 0.99rem;
+    }
+
+    .quickLinks {
+        line-height: 2rem;
+    }
+
+    .infoBetterBrains {
+        line-height: 2rem;
+    }
+
+    .infoBetterBrains li {
+        font-size: 0.99rem;
+    }
+
+    .apniHakeekat {
+        font-size: 0.99rem;
+    }
+
+}
+
+@media screen and (min-width:836px) and (max-width:1055px) {
+    nav ul {
+        width: 75%;
+    }
+
+    .fade {
+        /* display: flex; */
+        /* width: 38vw; */
+        /* height: 50%; */
+        width: 33vw;
+        /* align-items: center; */
+    }
+
+
+
+
+}
+
+@media screen and (min-width:875px) and (max-width:1055px) {
+
+    nav ul {
+        width: 60%;
+    }
+}
