@@ -1,7 +1,7 @@
 let user;
 const fetchUser = async () => {
   try {
-    user = await fetch("https://betterbrains-mamp.onrender.com/myCourses", {
+    user = await fetch("https://bestbrains.onrender.com/myCourses", {
       method: "GET",
       headers: {
         Authentication: `Bearer ${localStorage.getItem(

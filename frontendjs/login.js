@@ -9,7 +9,7 @@ form.addEventListener("submit", async (e) => {
   let res;
   e.preventDefault();
   try {
-    res = await fetch("https://betterbrains-mamp.onrender.com/login", {
+    res = await fetch("https://bestbrains.onrender.com/login", {
       method: "POST",
       body: JSON.stringify(body),
       headers: { "Content-type": "application/json" },

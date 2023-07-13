@@ -5,7 +5,7 @@ submit.addEventListener("click", async () => {
   console.log(otp);
   body = { otp };
   const res = await fetch(
-    "https://betterbrains-mamp.onrender.com/authorizeUser",
+    "https://bestbrains.onrender.com/authorizeUser",
     {
       method: "POST",
       body: JSON.stringify(body),
@@ -28,7 +28,7 @@ submit.addEventListener("click", async () => {
 let user;
 const fetchUser = async () => {
   try {
-    user = await fetch("https://betterbrains-mamp.onrender.com/resendOtp", {
+    user = await fetch("https://bestbrains.onrender.com/resendOtp", {
       method: "GET",
       headers: {
         Authentication: `Bearer ${localStorage.getItem("otpToken")}`,

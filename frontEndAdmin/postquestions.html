@@ -61,6 +61,8 @@
     <div>isMultipleChoice</div>
     <input type="number" id="isMultiple"></input>
     
+    <div>Subject</div>
+    <input type="text" id="subject"></input>
     <button id="submit">Submit</button>
   </body>
   <script>
@@ -85,6 +87,8 @@
       const partial = document.getElementById("partial").value;
       const negative = document.getElementById("negative").value;
       const course=document.getElementById("course").value
+      const subject=document.getElementById("subject").value
+
       const isMultipleChoice=document.getElementById("isMultiple").value
       const reqBody = {
         name,
@@ -99,10 +103,10 @@
         partial,
         negative,
         course,
-        isMultipleChoice
+        isMultipleChoice,subject
       };
       console.log(reqBody);
-      const response = await fetch("http://127.0.0.1:3000/data", {
+      const response = await fetch("https://bestbrains.onrender.com/data", {
         method: "POST",
         headers: {
           "content-type": "application/json",

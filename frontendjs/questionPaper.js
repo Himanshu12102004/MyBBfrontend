@@ -2,7 +2,7 @@ let questionPaper;
 const fetchTest = async () => {
   console.log(localStorage.getItem("course"), localStorage.getItem("test"));
   const test = await fetch(
-    `https://betterbrains-mamp.onrender.com/test?course=${localStorage.getItem(
+    `https://bestbrains.onrender.com/test?course=${localStorage.getItem(
       "course"
     )}&test=${localStorage.getItem("test")}`,
     {
@@ -45,7 +45,7 @@ document.getElementById("submit").addEventListener("click", async () => {
   const a = { answers: answersArray };
   const body = { a: "dhu" };
   const result = await fetch(
-    `http://localhost:3000/result?course=${localStorage.getItem(
+    `https://bestbrains.onrender.com/result?course=${localStorage.getItem(
       "course"
     )}&test=${localStorage.getItem("test")}`,
     {

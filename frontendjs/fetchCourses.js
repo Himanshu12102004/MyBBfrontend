@@ -2,7 +2,7 @@ const myCourse = localStorage.getItem("course");
 console.log(myCourse);
 const fetchCourse = async () => {
   const schedule = await fetch(
-    `https://betterbrains-mamp.onrender.com/schedule?course=${myCourse}`,
+    `https://bestbrains.onrender.com/schedule?course=${myCourse}`,
 
     {
       method: "GET",
