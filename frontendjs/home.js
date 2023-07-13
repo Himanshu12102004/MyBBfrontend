@@ -1,4 +1,13 @@
 let user;
+// Parse the query parameters from the URL
+const urlParams = new URLSearchParams(window.location.search);
+const token = urlParams.get("token");
+
+// Use the token and user info as needed
+console.log(token);
+if (token) {
+  localStorage.setItem("token", token);
+}
 const fetchUser = async () => {
   try {
     user = await fetch("https://bestbrains.onrender.com/myCourses", {
