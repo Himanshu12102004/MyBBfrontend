@@ -1,5 +1,7 @@
 const form = document.querySelector("form");
-
+document.getElementById("contWithGoogle").addEventListener("click", () => {
+  location.href = "https://bestbrains.onrender.com/auth/google";
+});
 form.addEventListener("submit", async (e) => {
   const email = document.querySelector("#userId").value;
   const phone = document.querySelector("#mobileNo").value;
